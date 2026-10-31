@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="Ride Companion"><style>
+  .seg{fill:none;stroke-width:30;stroke-linecap:round}
+  .tk line{stroke:#6A6A78;stroke-width:7;stroke-linecap:round}
+  .needle{transform-origin:256px 262px;transform:rotate(62deg)}
+  @media (prefers-reduced-motion:no-preference){
+    .s .seg{stroke-dasharray:1 1;stroke-dashoffset:1;animation:fill-s 5s cubic-bezier(.3,.7,.2,1) infinite}
+    .s .s1{animation-delay:.1s}.s .s2{animation-delay:.2s}.s .s3{animation-delay:.3s}
+    .s .needle{animation:sweep-s 5s cubic-bezier(.3,.7,.2,1) infinite}
+    .s .wheel{animation:spin-s .5s linear infinite}
+    .s .lines path{animation:dash-s 5s ease-in-out infinite}
+    .s .glow{animation:glow-s 5s ease-in-out infinite}
+  }
+  @keyframes fill-s{0%{stroke-dashoffset:1}32%,82%{stroke-dashoffset:0}100%{stroke-dashoffset:1}}
+  @keyframes sweep-s{0%{transform:rotate(-130deg)}28%{transform:rotate(112deg)}40%{transform:rotate(54deg)}48%,82%{transform:rotate(62deg)}100%{transform:rotate(-130deg)}}
+  @keyframes spin-s{to{transform:rotate(360deg)}}
+  @keyframes dash-s{0%,18%{opacity:0;transform:translateX(40px)}36%,82%{opacity:1;transform:translateX(0)}100%{opacity:0;transform:translateX(-30px)}}
+  @keyframes glow-s{0%,20%{opacity:.15}40%,82%{opacity:.55}100%{opacity:.15}}
+</style><defs>
+  <radialGradient id="bg-s" cx="50%" cy="35%" r="80%"><stop offset="0" stop-color="#1E1E28"/><stop offset="1" stop-color="#050507"/></radialGradient>
+  <radialGradient id="gl-s" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#FF2BD6" stop-opacity=".9"/><stop offset="1" stop-color="#FF2BD6" stop-opacity="0"/></radialGradient>
+</defs>
+<rect width="512" height="512" rx="112" fill="url(#bg-s)"/>
+<g class="">
+  <circle class="glow" cx="413" cy="178" r="70" fill="url(#gl-s)" opacity=".25"/>
+  <g class="tk"><line x1="121.9" y1="199.5" x2="138.2" y2="207.1"/><line x1="256.0" y1="114.0" x2="256.0" y2="132.0"/><line x1="390.1" y1="199.5" x2="373.8" y2="207.1"/></g>
+  <path class="seg s0" d="M114.8 370.4 A178 178 0 0 1 91.5 193.9" stroke="#FFD60A" pathLength="1"/><path class="seg s1" d="M98.1 179.8 A178 178 0 0 1 248.2 84.2" stroke="#39FF14" pathLength="1"/><path class="seg s2" d="M263.8 84.2 A178 178 0 0 1 413.9 179.8" stroke="#1F8FFF" pathLength="1"/><path class="seg s3" d="M420.5 193.9 A178 178 0 0 1 397.2 370.4" stroke="#FF2BD6" pathLength="1"/>
+  <g class="needle"><path d="M245 262 L256 112 L267 262 Z" fill="#fff"/></g>
+  <circle cx="256" cy="262" r="24" fill="#0B0B10" stroke="#fff" stroke-width="10"/>
+  <g class="lines" stroke="#30D158" stroke-width="10" stroke-linecap="round"><path d="M156 330H190"/><path d="M144 356H186"/></g>
+  <path d="M196 404 H322 L340 318 M318 318 H362" fill="none" stroke="#fff" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+  <g class="wheel w1" style="transform-origin:196px 414px"><circle cx="196" cy="414" r="27" fill="#0B0B10" stroke="#fff" stroke-width="11"/><path d="M196 414L196.0 401.0M196 414L207.3 420.5M196 414L184.7 420.5" stroke="#fff" stroke-width="5" stroke-linecap="round"/></g><g class="wheel w2" style="transform-origin:340px 414px"><circle cx="340" cy="414" r="27" fill="#0B0B10" stroke="#fff" stroke-width="11"/><path d="M340 414L340.0 401.0M340 414L351.3 420.5M340 414L328.7 420.5" stroke="#fff" stroke-width="5" stroke-linecap="round"/></g>
+</g></svg>

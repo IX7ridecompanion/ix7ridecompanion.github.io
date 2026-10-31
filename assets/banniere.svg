@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 400" width="1280" height="400" role="img" aria-label="Ride Companion for iX7 Pro">
+<defs><linearGradient id="bb" x1="0" x2="1"><stop offset="0" stop-color="#0B0B10"/><stop offset="1" stop-color="#15151E"/></linearGradient>
+<linearGradient id="mode" x1="0" x2="1"><stop offset="0" stop-color="#FFD60A"/><stop offset=".33" stop-color="#39FF14"/><stop offset=".66" stop-color="#1F8FFF"/><stop offset="1" stop-color="#FF2BD6"/></linearGradient></defs>
+<rect width="1280" height="400" rx="36" fill="url(#bb)"/>
+<g transform="translate(56 50) scale(.586)"><style>
+  .seg{fill:none;stroke-width:30;stroke-linecap:round}
+  .tk line{stroke:#6A6A78;stroke-width:7;stroke-linecap:round}
+  .needle{transform-origin:256px 262px;transform:rotate(62deg)}
+  @media (prefers-reduced-motion:no-preference){
+    .b .seg{stroke-dasharray:1 1;stroke-dashoffset:1;animation:fill-b 5s cubic-bezier(.3,.7,.2,1) infinite}
+    .b .s1{animation-delay:.1s}.b .s2{animation-delay:.2s}.b .s3{animation-delay:.3s}
+    .b .needle{animation:sweep-b 5s cubic-bezier(.3,.7,.2,1) infinite}
+    .b .wheel{animation:spin-b .5s linear infinite}
+    .b .lines path{animation:dash-b 5s ease-in-out infinite}
+    .b .glow{animation:glow-b 5s ease-in-out infinite}
+  }
+  @keyframes fill-b{0%{stroke-dashoffset:1}32%,82%{stroke-dashoffset:0}100%{stroke-dashoffset:1}}
+  @keyframes sweep-b{0%{transform:rotate(-130deg)}28%{transform:rotate(112deg)}40%{transform:rotate(54deg)}48%,82%{transform:rotate(62deg)}100%{transform:rotate(-130deg)}}
+  @keyframes spin-b{to{transform:rotate(360deg)}}
+  @keyframes dash-b{0%,18%{opacity:0;transform:translateX(40px)}36%,82%{opacity:1;transform:translateX(0)}100%{opacity:0;transform:translateX(-30px)}}
+  @keyframes glow-b{0%,20%{opacity:.1}40%,82%{opacity:.35}100%{opacity:.1}}
+</style><defs>
+  <radialGradient id="bg-b" cx="50%" cy="35%" r="80%"><stop offset="0" stop-color="#1E1E28"/><stop offset="1" stop-color="#050507"/></radialGradient>
+  <radialGradient id="gl-b" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#FF2BD6" stop-opacity=".9"/><stop offset="1" stop-color="#FF2BD6" stop-opacity="0"/></radialGradient>
+</defs>
+<rect width="512" height="512" rx="112" fill="url(#bg-b)"/>
+<g class="b">
+  <circle class="glow" cx="413" cy="178" r="70" fill="url(#gl-b)" opacity=".25"/>
+  <g class="tk"><line x1="121.9" y1="199.5" x2="138.2" y2="207.1"/><line x1="256.0" y1="114.0" x2="256.0" y2="132.0"/><line x1="390.1" y1="199.5" x2="373.8" y2="207.1"/></g>
+  <path class="seg s0" d="M114.8 370.4 A178 178 0 0 1 91.5 193.9" stroke="#FFD60A" pathLength="1"/><path class="seg s1" d="M98.1 179.8 A178 178 0 0 1 248.2 84.2" stroke="#39FF14" pathLength="1"/><path class="seg s2" d="M263.8 84.2 A178 178 0 0 1 413.9 179.8" stroke="#1F8FFF" pathLength="1"/><path class="seg s3" d="M420.5 193.9 A178 178 0 0 1 397.2 370.4" stroke="#FF2BD6" pathLength="1"/>
+  <g class="needle"><path d="M245 262 L256 112 L267 262 Z" fill="#fff"/></g>
+  <circle cx="256" cy="262" r="24" fill="#0B0B10" stroke="#fff" stroke-width="10"/>
+  <g class="lines" stroke="#30D158" stroke-width="10" stroke-linecap="round"><path d="M156 330H190"/><path d="M144 356H186"/></g>
+  <path d="M196 404 H322 L340 318 M318 318 H362" fill="none" stroke="#fff" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+  <g class="wheel w1" style="transform-origin:196px 414px"><circle cx="196" cy="414" r="27" fill="#0B0B10" stroke="#fff" stroke-width="11"/><path d="M196 414L196.0 401.0M196 414L207.3 420.5M196 414L184.7 420.5" stroke="#fff" stroke-width="5" stroke-linecap="round"/></g><g class="wheel w2" style="transform-origin:340px 414px"><circle cx="340" cy="414" r="27" fill="#0B0B10" stroke="#fff" stroke-width="11"/><path d="M340 414L340.0 401.0M340 414L351.3 420.5M340 414L328.7 420.5" stroke="#fff" stroke-width="5" stroke-linecap="round"/></g>
+</g></g>
+<g font-family="Inter,Segoe UI,Roboto,Helvetica,Arial,sans-serif">
+<text x="420" y="188" font-size="92" font-weight="800" fill="#FFFFFF" letter-spacing="-2">Ride Companion</text>
+<text x="424" y="250" font-size="40" font-weight="500" fill="#A0A0AE">for <tspan fill="#FFFFFF" font-weight="700">iX7 Pro</tspan></text>
+<rect x="424" y="286" width="560" height="8" rx="4" fill="url(#mode)"/>
+<text x="424" y="336" font-size="26" fill="#8A8A93">Téléphone · Wear OS · Trajets · Batterie · Cadenas</text>
+</g></svg>
